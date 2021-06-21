@@ -104,7 +104,6 @@ void showCleared()
 void showUrl()
 {
   sprites.drawSelfMasked(81, 5, visit, 0);
-  for (byte i = 0; i < 2; i++) sprites.drawSelfMasked(15, 32 * i, qrcode, i);
   sprites.drawSelfMasked(0, 3, forMore, 0);
   pressKeyBlinking();
   if (arduboy.justPressed(A_BUTTON | B_BUTTON | UP_BUTTON | DOWN_BUTTON | RIGHT_BUTTON | LEFT_BUTTON)) demoFase++;
